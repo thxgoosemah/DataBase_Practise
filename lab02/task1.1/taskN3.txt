@@ -1,0 +1,9 @@
+I would choose EmpID as the primary key, because:
+
+It is specifically designed as an internal unique identifier.
+
+Unlike SSN, it avoids privacy/security issues.
+
+Unlike Email or Phone, it won’t change if the employee changes their contact details.
+
+It is short, numeric, and stable → best suited for primary key use.

@@ -1,0 +1,17 @@
+EmpID (unique company identifier)
+
+SSN (unique to each person by law)
+
+Email (unique per employee email address)
+
+Phone (appears unique in sample data, but not guaranteed in real life)
+
+So the candidate keys are:
+
+{EmpID}
+
+{SSN}
+
+{Email}
+
+{Phone} (if we assume the company policy enforces one phone per employee)

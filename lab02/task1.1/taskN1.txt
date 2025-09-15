@@ -1,0 +1,11 @@
+{EmpID}
+
+{SSN}
+
+{Email}
+
+{Phone}
+
+{EmpID, Name}
+
+{SSN, Department}
