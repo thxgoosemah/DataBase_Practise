@@ -1,0 +1,22 @@
+Minimum set of attributes for the primary key:
+{StudentID, CourseCode, Section, Semester, Year}
+
+Explanation:
+
+StudentID — identifies the student.
+
+CourseCode — identifies the course.
+
+Section — distinguishes different groups of the same course in the same semester.
+
+Semester, Year — specify the exact term; needed since a student can retake the same course in different semesters.
+
+Additional candidate keys:
+
+No other minimal keys under the current rules.
+
+Possible alternatives:
+
+{StudentID, CourseCode, Semester, Year} — if students are not allowed to enroll in multiple sections of the same course in one semester.
+
+A surrogate key (e.g., RegistrationID) could also serve as a candidate key.

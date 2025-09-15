@@ -1,0 +1,45 @@
+Relationship Logic (FK):
+
+Student → Professor
+
+Student.AdvisorID → Professor.ProfID
+(each student can have an academic supervisor/advisor).
+
+Professor → Department
+
+Professor.Department → Department.DeptCode
+(each professor belongs to a department).
+
+Course → Department
+
+Course.DepartmentCode → Department.DeptCode
+(each course is offered by a department).
+
+Department → Professor
+
+Department.ChairID → Professor.ProfID
+(each department has a department chair).
+
+Enrollment → Student
+
+Enrollment.StudentID → Student.StudentID
+(each course registration belongs to a student).
+
+Enrollment → Course
+
+Enrollment.CourseID → Course.CourseID
+(each registration is linked to a specific course).
+
+Total (list of foreign keys):
+
+Student.AdvisorID → Professor.ProfID
+
+Professor.Department → Department.DeptCode
+
+Course.DepartmentCode → Department.DeptCode
+
+Department.ChairID → Professor.ProfID
+
+Enrollment.StudentID → Student.StudentID
+
+Enrollment.CourseID → Course.CourseID
