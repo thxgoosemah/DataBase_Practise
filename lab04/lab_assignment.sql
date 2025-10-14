@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS projects (
                           status VARCHAR(20)
 );
 
-CREATE TABLE assignments (
+CREATE TABLE assignment (
                              assignment_id SERIAL PRIMARY KEY,
                              employee_id INTEGER REFERENCES employees(employee_id),
                              project_id INTEGER REFERENCES projects(project_id),
